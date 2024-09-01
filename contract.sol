@@ -224,7 +224,7 @@ contract ContractPlatform is ERC721URIStorage, ReentrancyGuard {
             require(msg.value == amount,"No funds should be sent for this contract");
         }
         else{
-            
+            //make it so value cannot be less than lockinamount
             require(msg.value == contractDetails.lockInAmount,"Insufficient funds sent");
         }
 
@@ -427,6 +427,7 @@ contract ContractPlatform is ERC721URIStorage, ReentrancyGuard {
     function getTotalAmount(uint256 contractId) external view returns (uint256) {
         return contracts[contractId].rate * contracts[contractId].quantity;
     }
+    //should i add amountobepaid?
     function getClauses(uint256 contractId) external view returns (string[] memory) {
         return contracts[contractId].clauses;
     }
