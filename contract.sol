@@ -135,7 +135,6 @@ contract ContractPlatform is ERC721URIStorage, ReentrancyGuard {
 
     //the stack too deep error is likely here. 
     function createContract(
-        address creator,
         bool isCreatorFarmer,
         uint256 tokenId,
         string memory commodity,
@@ -154,7 +153,7 @@ contract ContractPlatform is ERC721URIStorage, ReentrancyGuard {
         contractCounter++;
         //counter is id currently
         contracts[contractCounter] = ContractDetails({
-            creator: creator,
+            creator: msg.sender,
             isCreatorFarmer: isCreatorFarmer,
             tokenId: tokenId,
             commodity: commodity,
@@ -183,7 +182,7 @@ contract ContractPlatform is ERC721URIStorage, ReentrancyGuard {
         _transfer(msg.sender, address(this), tokenId);
         emit ContractCreated(
             contractCounter,
-            creator,
+            msg.sender,
             isCreatorFarmer,
             tokenId,
             commodity,

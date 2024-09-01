@@ -757,11 +757,6 @@
 			{
 				"inputs": [
 					{
-						"internalType": "address",
-						"name": "creator",
-						"type": "address"
-					},
-					{
 						"internalType": "bool",
 						"name": "isCreatorFarmer",
 						"type": "bool"
@@ -2033,11 +2028,11 @@
 			]
 		},
 		"contract.sol": {
-			"keccak256": "0x3cb24b42759b11780ddc94e7adf5c3f12d875d42d91a8b4832b7ffef9bcadb33",
+			"keccak256": "0xd741c90536f38382f98dfd8bd3746af2e05360480e24335ce7e7fda7816e4e19",
 			"license": "UNLICENSED",
 			"urls": [
-				"bzz-raw://51baf83d3db18a522f6b3c79110d87b567e7061bb9fe07bd9884aafff2d49f67",
-				"dweb:/ipfs/QmcZHYssbVGkGz9Jyjc9kN4dDq9QQgY7Pk9aCBifqjdFxv"
+				"bzz-raw://e8fa193db4269771aca8638572943c34aa2caebedfbfd9217ef81e2be77f2198",
+				"dweb:/ipfs/Qmcg9ZjJyeyir8ETTDQjmoAbNw5t6UFwbAd7yeTTevqLSQ"
 			]
 		}
 	},
